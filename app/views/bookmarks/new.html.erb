@@ -1,0 +1,11 @@
+<%# ajouter un form simple_form %>
+<h1>Add movie</h1>
+
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <%= f.association :movie %>
+  <%= f.input :comment %>
+  <%= f.submit %>
+<% end %>
+<%# en lui passant [@list, @bookmark] %>
+<%# ajouter un champ association :movie %>
+<%#  %>
